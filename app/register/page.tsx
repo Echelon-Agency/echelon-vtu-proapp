@@ -4,8 +4,6 @@ import { supabase } from '@/lib/supabase'; // Ensure you have your supabase clie
 import WalletBalance from '@/components/WalletBalance';
 
 export default function RegisterPage() { 
-
-export default DashboardPage() {
   const [formData, setFormData] = useState({ email: '', password: '', fullName: '', phone: '' });
   const [loading, setLoading] = useState(false);
 
