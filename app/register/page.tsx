@@ -1,8 +1,9 @@
 "use client";
 import { useState } from 'react';
 import { supabase } from '@/lib/supabase'; // Ensure you have your supabase client configured here
+import WalletBalance from '@/components/WalletBalance';
 
-export default function RegisterPage() { import WalletBalance from '@/components/WalletBalance';
+export default function RegisterPage() { 
 
 export default DashboardPage() {
   const [formData, setFormData] = useState({ email: '', password: '', fullName: '', phone: '' });
