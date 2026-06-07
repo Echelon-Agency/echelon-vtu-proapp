@@ -1,3 +1,6 @@
+import WalletBalance from '@/components/WalletBalance';
+
+export default function DashboardPage() {
 "use client";
 import { useState } from 'react';
 import { supabase } from '@/lib/supabase'; // Ensure you have your supabase client configured here
@@ -30,6 +33,14 @@ export default function RegisterPage() {
   };
 
   return (
+        <div className="p-8">
+      <h1>Welcome to your Echelon Dashboard</h1>
+      
+      <WalletBalance />
+      
+    </div>
+  );
+}
     <form onSubmit={handleSignUp} className="p-8 space-y-4">
       <input type="text" placeholder="Full Name" onChange={(e) => setFormData({...formData, fullName: e.target.value})} required className="border p-2 w-full" />
       <input type="tel" placeholder="Phone Number" onChange={(e) => setFormData({...formData, phone: e.target.value})} required className="border p-2 w-full" />
