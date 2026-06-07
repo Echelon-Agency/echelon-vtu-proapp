@@ -1,7 +1,7 @@
 "use client";
 import { useState } from 'react';
-import { supabase } from '@/lib/supabase';
-import WalletBalance from '@/components/WalletBalance';
+import { supabase } from '../../lib/supabase'; 
+import WalletBalance from '../../components/WalletBalance'; 
 
 export default function RegisterPage() {
   const [formData, setFormData] = useState({ email: '', password: '', fullName: '', phone: '' });
